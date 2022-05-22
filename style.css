@@ -1,0 +1,107 @@
+#root {
+  height: 100vh;
+  width: 70vw;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+.list__block {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em 1em;
+  position: absolute;
+  width: 100%;
+}
+
+.person__block {
+  padding: 2em;
+  background-color: rgb(246,246,246);
+  border: 2px solid rgb(205,205, 205);
+}
+
+.person__block:hover {
+  background-color: rgb(200,200,200);
+}
+
+.like__block {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.like__icon,
+.fa-times {
+  margin: auto;
+  font-size: 1.5em;
+  color: rgb(15, 70, 98);
+}
+
+.like__icon:hover,
+.fa-times:hover
+{
+  color: blue;
+  cursor: pointer;
+}
+
+.fa-times {
+  float: right;
+  padding-bottom: 1em;
+}
+
+
+.choosen {
+  color: blue;
+}
+
+.choosen:hover {
+  color: rgb(15, 70, 98);
+  cursor: pointer;
+}
+
+.like__image {
+  width: 100%;
+  border: 1px solid rgb(102,102, 102);
+}
+
+.button__block {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1em;
+}
+
+.button__prev, 
+.button__next {
+  padding: 1em 2em;
+  border: 1px solid gray;
+}
+
+.button__prev:hover,
+.button__next:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.list__block .person__block .like__block-image .like__image:hover{
+  cursor: pointer;
+}
+
+.modal__block {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__block .person__block {
+  width: 50%;
+}
+
+.modal__block .person__block:hover{
+  background-color: rgb(246,246,246);
+}
+
